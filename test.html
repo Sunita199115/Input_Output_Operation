@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic webpage</title>
+    <style>
+        .clsWorld {
+            color: blue;
+            padding-left: 200px;
+            border: 1px solid brown;
+            margin-bottom: 10px;
+            background-color: burlywood
+        }
+
+        /* #idTiger {
+            border: 10px solid rgb(151, 153, 36);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: red">hello</h1>
+    <div class="clsWorld">world</div>
+    <div id="idTiger" class="clsWorld">tiger</div>
+    <button id="btnTranslate">translate</button>
+    <textarea name="" id="txt_output" cols="30" rows="10"></textarea>
+    <script>
+        // Button Action
+        var btnAction = document.querySelector("#btnTranslate");
+        btnAction.addEventListener("click", function clickEventHandler() {
+            console.log("clicked")
+        }
+        )
+        //document.querySelector("#txt_output").color
+        var showInnerText = document.querySelector("#idTiger");
+        var buttonOutput = document.querySelector("#btnTranslate");
+        buttonOutput.addEventListener("click", function clickEventHandler() {
+            console.log(showInnerText.color)
+        })
+    </script>
+</body>
+
+</html>
